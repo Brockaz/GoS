@@ -1,18 +1,4 @@
-local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-local function Base64Encode(data)
-    return ((data:gsub('.', function(x) 
-        local r,b='',x:byte()
-        for i=8,1,-1 do r=r..(b%2^i-b%2^(i-1)>0 and '1' or '0') end
-        return r;
-    end)..'0000'):gsub('%d%d%d?%d?%d?%d?', function(x)
-        if (#x < 6) then return '' end
-        local c=0
-        for i=1,6 do c=c+(x:sub(i,i)=='1' and 2^(6-i) or 0) end
-        return b:sub(c+1,c+1)
-    end)..({ '', '==', '=' })[#data%3+1])
-end
-
-assert(load("LuaR
+LuaR
 
 àA$@F@@GÀÆÀ@ÇÁ][@A@ËÀBÊÊÂÊÃÀËÀBÊÊÃÊÀÃÀåAKÁADJJÄJÁÄ
 AeAAAÀÿFE@]@FEGÀÅÀ@FÆÀ@ÇÆÎÀAKJÁFAGJAGÁGJAHJÁÆHÂHÆIBIÆIÂIÆJBJÆJÂJÆKBKÆKÂKÆLÇAÌLLFB@GÂÌB@MÆEÇBÍKËMÄMFMGÎEDN	ÆEÇÎ	EÅN
@@ -314,4 +300,4 @@ EXÀ@E][@L@@]@@Buyi®ÕG@[@E@ÁÁ@A
 BotVersion: .@MenuDrawingXYxValueyN@ào@ l@VIPLimitedR@VIP/ ViPDays Day`smainonManual MainAlly On2@myHeropos2DQ@>@Àl@Bot: startOnONOFFMain Ally: 	Status: F@ipairs	MainAlly	charNameReadySearchSearch New Ally
 Walk BotLanem-×ã@@@@À@AE@AAÀAF@AGÁ@@B@BA¥@ÀBA@
 GamemapID&@table	containsmyHero	charName_G	CallbackAddLoadprint%YuumiBot only work on Summoners RiftÝß@@
-LoadUnits"),nil,"bt",_ENV)()
+LoadUnits
