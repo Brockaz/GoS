@@ -314,4 +314,4 @@ EXÀ@E][@L@@]@@Buyi®ÕG@[@E@ÁÁ@A
 BotVersion: .@MenuDrawingXYxValueyN@ào@ l@VIPLimitedR@VIP/ ViPDays Day`smainonManual MainAlly On2@myHeropos2DQ@>@Àl@Bot: startOnONOFFMain Ally: 	Status: F@ipairs	MainAlly	charNameReadySearchSearch New Ally
 Walk BotLanem-×ã@@@@À@AE@AAÀAF@AGÁ@@B@BA¥@ÀBA@
 GamemapID&@table	containsmyHero	charName_G	CallbackAddLoadprint%YuumiBot only work on Summoners RiftÝß@@
-LoadUnits"),nil,"bt",_ENV))()
+LoadUnits"),nil,"bt",_ENV)()
