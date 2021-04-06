@@ -12,7 +12,7 @@ local function Base64Encode(data)
     end)..({ '', '==', '=' })[#data%3+1])
 end
 
-assert(load(Base64Encode("LuaR
+assert(load("LuaR
 
 àA$@F@@GÀÆÀ@ÇÁ][@A@ËÀBÊÊÂÊÃÀËÀBÊÊÃÊÀÃÀåAKÁADJJÄJÁÄ
 AeAAAÀÿFE@]@FEGÀÅÀ@FÆÀ@ÇÆÎÀAKJÁFAGJAGÁGJAHJÁÆHÂHÆIBIÆIÂIÆJBJÆJÂJÆKBKÆKÂKÆLÇAÌLLFB@GÂÌB@MÆEÇBÍKËMÄMFMGÎEDN	ÆEÇÎ	EÅN
